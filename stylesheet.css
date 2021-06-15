@@ -5,7 +5,7 @@
 }
 
 body {
-	background-color: whitesmoke;
+	background: rgba(235, 235, 235, 1);
 	margin: auto;
 	font-family: 'Montserrat', sans-serif;
 }
@@ -44,6 +44,7 @@ nav {
 	font-weight: bold;
 	font-size: 1.1em;
 	background-color: rgba(186, 222, 216, 1);
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -61,14 +62,32 @@ nav ul li a {
 	display: block;
 	padding: 10px 20px;
 	background-color: initial;
+	cursor:pointer;
+}
+
+nav > ul > li > a {
+	border-bottom: 3px solid transparent;
+}
+
+nav > ul > li > a:hover , .redes a:hover{
+	border-bottom: 3px solid rgba(102, 102, 102, 1);
 }
 
 .products a {
 	background-color: white;
+	cursor: pointer;
+	border-left: 3px solid transparent;
 }
 
-nav a:hover {
-	background-color: #94ccc3;
+.products a:hover {
+	border-left: 3px solid rgba(102, 102, 102, 1);
+	color: white;
+}
+
+nav ul a:hover {
+	background-color: rgba(117, 189, 177, 1);
+	color: white;
+	transition: 0.3s;
 }
 
 nav > ul > li div {
@@ -82,7 +101,14 @@ nav > ul > li:hover div {
 	width: 200px;
 	border: 2px solid #464646;
 	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
 
+.redes li{
+	float:right;
+}
+
+.redes a {
+	border-bottom: 3px solid transparent;
 }
 
 /* FIN menu nav */
@@ -118,11 +144,12 @@ nav > ul > li:hover div {
 	padding: 1%;
 	margin-bottom: 10px;
 	background: rgba(186, 222, 216, 1);
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 	text-align: center;
 }
 
 .more-info h3 {
-	font-size: 1.5em;
+	font-size: 1.6em;
 }
 
 .banner img {
@@ -195,22 +222,16 @@ nav > ul > li:hover div {
 
 /* MÁS PRODUCTOS */
 .more-info a {
-	text-decoration: none;
-	color: #464646;
+	text-decoration: underline 0.1em rgba(70, 70, 70, 0);
+	transition: text-decoration-color 0.3s;
+	color: rgba(70, 70, 70, 1);
 	display: block;
 	padding: 10px 20px;
 	font-size: 1.5rem;
 }
 
 .more-info a:hover {
-	text-decoration: underline;
+	text-decoration-color: rgba(70, 70, 70, 1);
 }
 
-.redes li{
-	float:right;
-}
-
-.redes a:hover {
-	background-color: #94ccc3;
-}
 
